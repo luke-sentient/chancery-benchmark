@@ -5,7 +5,7 @@ Law has long been a domain that has been popular in natural language processing 
 
 # CHANCERY Evaluator
 
-eval.py evaluates LLM performance on the CHANCERY benchmark by querying a custom LLM through LiteLLM to measure accuracy.
+eval.ipynb evaluates LLM performance on the CHANCERY benchmark by querying a custom LLM through LiteLLM to measure accuracy.
 
 ## Features
 
