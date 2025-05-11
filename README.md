@@ -128,6 +128,10 @@ The tool implements exponential backoff retry logic to handle API rate limits:
 - Doubles wait time with each retry
 - Configurable maximum retry attempts
 
+## Compute Resources
+
+All evaluations were completed within a budget of $200. Evaluations take between 1-5 hours to complete depending on the complexity of the model/agent. 
+
 ## License
 
 [MIT License](LICENSE)
