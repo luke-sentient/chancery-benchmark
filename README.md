@@ -76,13 +76,7 @@ print(f"Evaluation complete with {accuracy:.2f}% accuracy")
 
 ## Supported Models
 
-You can use any model supported by [LiteLLM](https://github.com/BerriAI/litellm#supported-providers), including:
-
-- **OpenAI**: `gpt-4o`, `gpt-4-turbo`, `gpt-3.5-turbo`
-- **Anthropic**: `anthropic/claude-3-opus`, `anthropic/claude-3-sonnet`, `anthropic/claude-3-haiku`
-- **Fireworks AI**: `fireworks_ai/llama-v3p3-70b-instruct`, `fireworks_ai/mixtral-8x7b-instruct`
-- **Mistral AI**: `mistral/mistral-small`, `mistral/mistral-medium`
-- **Many others**: See LiteLLM documentation for the full list
+You can use any model supported by [LiteLLM](https://github.com/BerriAI/litellm#supported-providers)
 
 ## Input Data Format
 
@@ -90,9 +84,9 @@ You can use any model supported by [LiteLLM](https://github.com/BerriAI/litellm#
 Each line in the JSONL file should contain:
 ```json
 {
-  "question": "Does this charter allow the bank to engage in investment banking?",
+  "question": "Southwest Airlines is planning to prevent shareholders from calling special meetings by amending its bylaws. Given the powers outlined in the charter, is there anything stopping the board from making this change on its own?",
+"charter_id": "92380A20120517",
   "answer": "Yes",
-  "charter_id": "12345"
 }
 ```
 
@@ -100,7 +94,7 @@ Each line in the JSONL file should contain:
 The CSV file should contain at minimum:
 ```
 charter_id,text,coname,...
-12345,"Full charter text here...",Bank of Example,...
+92380A20120517,"Full charter text here...",Southwest Airlines,...
 ```
 
 ## Output Format
